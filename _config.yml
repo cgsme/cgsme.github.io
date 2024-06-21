@@ -7,11 +7,11 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
+locale                   : "cn-ZH"
 title                    : "Guason Note"
 title_separator          : "-"
 name                     : &name "guason"
-description              : &description "personal description"
+description              : &description "醒着的睡着的人"
 url                      : https://cgsme.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "cgsme/cgsme.github.io"
@@ -269,6 +269,17 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _notes
+  - scope:
+      path: ""
+      type: notes
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      comments: true
+      share: true
+      related: true
 
 
 # Sass/SCSS
